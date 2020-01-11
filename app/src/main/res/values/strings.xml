@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">CursovoyProject</string>
     <string name="action_settings">Settings</string>
-    <string name="buttonAdd">Add</string>
+    <string name="buttonAdd">Добавить</string>
     <string name="buttonRead">Read</string>
     <string name="buttonClear">Clear</string>
     <string name="empty"> </string>
@@ -12,5 +12,13 @@
     <string name="change">Изменить</string>
     <string name="cansel">Отмена</string>
     <string name="Assept">Принять</string>
+    <string name="enterPass">Введите пароль</string>
+    <string name="email">Email</string>
+    <string name="telephone">Телефон</string>
+    <string name="audit">Аудитория</string>
+    <string name="more">Подробнее...</string>
+    <string name="practise">Практика</string>
+    <string name="production">Производственная</string>
+    <string name="undergraduate">Преддипломная</string>
 
 </resources>

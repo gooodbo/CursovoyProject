@@ -3,6 +3,8 @@ package com.example.cursovoyproject.Fragments;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -16,6 +18,8 @@ import android.widget.EditText;
 
 import com.example.cursovoyproject.DBHelper;
 import com.example.cursovoyproject.R;
+
+import java.io.ByteArrayOutputStream;
 
 public class Example extends Fragment implements View.OnClickListener {
     private View view;
@@ -81,5 +85,18 @@ public class Example extends Fragment implements View.OnClickListener {
                 break;
         }
         dbHelper.close();
+    }
+
+
+    // convert from bitmap to byte array
+    public static byte[] getBytes(Bitmap bitmap) {
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.PNG, 0, stream);
+        return stream.toByteArray();
+    }
+
+    // convert from byte array to bitmap
+    public static Bitmap getImage(byte[] image) {
+        return BitmapFactory.decodeByteArray(image, 0, image.length);
     }
 }

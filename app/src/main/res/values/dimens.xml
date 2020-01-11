@@ -1,3 +1,16 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_size">13sp</dimen>
+    <dimen name="edit_text_height">45dp</dimen>
+    <dimen name="edit_text_width">350dp</dimen>
+    <dimen name="edit_text_margin_top">15dp</dimen>
+    <dimen name="symmetry_margin">20dp</dimen>
+
+    <!--fragment_eter_legacy_informatio.xml-->
+    <dimen name="edit_text_margin_top_leg">15dp</dimen>
+    <dimen name="leg_edit_text_height">39dp</dimen>
+
+    <dimen name="edit_text_padding">20dp</dimen>
+
+    <dimen name="quastions_qwert">40dp</dimen>
 </resources>

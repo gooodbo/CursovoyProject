@@ -3,30 +3,46 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/members_fragment"
+    android:background="@color/layout_dark_grey"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ListView
-        android:id="@+id/listViewMember"
-        android:layout_width="match_parent"
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/layout_white_shape"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:choiceMode="multipleChoice"
         app:layout_constraintBottom_toTopOf="@+id/addMember"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-    </ListView>
+        <ListView
+            android:id="@+id/listViewMember"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:choiceMode="multipleChoice"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ListView>
+    </android.support.constraint.ConstraintLayout>
 
     <Button
         android:id="@+id/addMember"
+        style="@style/blueCapsButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="@string/buttonAdd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
